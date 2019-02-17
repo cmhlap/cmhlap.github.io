@@ -130,7 +130,7 @@ Jorm在他的研究中发现澳大利亚公众对于心理障碍的识别能力�
 
 本次调查中答卷的男性为3594人，女性为11301人，女性多于男性。由于女性与男性的人数不平衡，在后面的分析中，均首先检验性别差异。凡存在性别差异的，分开性别进行统计分析；不存在性别差异的，则合并在一起统计分析。
 
-答卷者的平均年龄为33.6岁，标准差为10.8岁；年龄中位数为32岁。各年龄段的分布比例如图2。男性答卷者平均年龄为34.8岁，标准差为11.0岁，女性答卷者平均年龄为33.3岁，标准差为10.7岁，男性答卷者年龄略高于女性答卷者年龄，差异达到统计显著（t=7.136，p\<0.01）。本次调查的答卷者的学历分布以大学为主，具体分布如图3：
+答卷者的平均年龄为33.6岁，标准差为10.8岁；年龄中位数为32岁。各年龄段的分布比例如图2。男性答卷者平均年龄为34.8岁，标准差为11.0岁，女性答卷者平均年龄为33.3岁，标准差为10.7岁，男性答卷者年龄略高于女性答卷者年龄，差异达到统计显著（t=7.136，p<0.01）。本次调查的答卷者的学历分布以大学为主，具体分布如图3：
 
 ![](/images/bluebook-4-0.png)
 
@@ -192,7 +192,7 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
 
 #### 2.年龄差异
 
-单因素方差分析显示，心理健康知识得分在不同年龄段存在显著差异（F=171.88，p\<0.001），总体上呈现年龄越大知识总分越低的趋势。得分最高的是25-34与35-44年龄组，显著高于其他各年龄组；其次是18-24与45-54年龄组，显著高于55-80年龄组。
+单因素方差分析显示，心理健康知识得分在不同年龄段存在显著差异（F=171.88，p<0.001），总体上呈现年龄越大知识总分越低的趋势。得分最高的是25-34与35-44年龄组，显著高于其他各年龄组；其次是18-24与45-54年龄组，显著高于55-80年龄组。
 
 {% echarts %}
 {
@@ -204,10 +204,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '知识总分',
+      min: 65.0,
+      max: 85.0
   },
   series: [{
       type: 'line',
-      data: [75.1, 77.8, 77.1, 74.8, 68.2]
+      data: [75.1, 77.8, 77.1, 74.8, 68.2],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -229,10 +240,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '心理疾病治疗',
+      min: 7.20,
+      max: 9.00
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [8.52, 8.76, 8.61, 8.44, 7.80]
+      data: [8.52, 8.76, 8.61, 8.44, 7.80],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -250,10 +272,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '心理疾病识别',
+      min: 12.00,
+      max: 16.00
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [14.92, 15.34, 15.06, 14.58, 13.13]
+      data: [14.92, 15.34, 15.06, 14.58, 13.13],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -271,10 +304,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '心理疾病预防',
+      min: 12.70,
+      max: 13.70
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [13.05, 13.36, 13.53, 13.61, 13.15]
+      data: [13.05, 13.36, 13.53, 13.61, 13.15],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -292,10 +336,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '身心健康关联',
+      min: 4.80,
+      max: 5.70
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [5.11, 5.53, 5.57, 5.53, 5.30]
+      data: [5.11, 5.53, 5.57, 5.53, 5.30],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -313,10 +368,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '自杀预防',
+      min: 0.00,
+      max: 9.00
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [7.68, 7.37, 6.91, 6.66, 6.09]
+      data: [7.68, 7.37, 6.91, 6.66, 6.09],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -334,10 +400,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '儿童保护',
+      min: 8.70,
+      max: 9.70
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [9.35, 9.64, 9.64, 9.52, 9.07]
+      data: [9.35, 9.64, 9.64, 9.52, 9.07],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -355,10 +432,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '儿童教育',
+      min: 0.00,
+      max: 8.00
   },
   series: [{
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       type: 'line',
-      data: [5.12, 6.46, 6.98, 6.52, 5.18]
+      data: [5.12, 6.46, 6.98, 6.52, 5.18],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -376,10 +464,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '其他知识与原理',
+      min: 0.00,
+      max: 12.00
   },
   series: [{
       type: 'line',
-      data: [11.32, 11.33, 10.80, 9.93, 8.52]
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      data: [11.32, 11.33, 10.80, 9.93, 8.52],
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }],
   tooltip: {
     trigger: 'axis',
@@ -407,18 +506,29 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '知识总分'
+      name: '知识总分',
+      min: 65.00,
+      max: 85.00
   },
   series: [{
       data: [73.54, 74.71, 75.85, 77.26, 80.31],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
 
 图6 心理健康知识总分的地域差异
 
-按城市类型比较，也发现不同类型城市之间差异显著（F=164.31，p\<0.001）。海外城市（79.55）得分最高，北上广深（78.10）次之，然后是其他省会城市或直辖市（76.13），最低是地县级城市（74.17）。
+按城市类型比较，也发现不同类型城市之间差异显著（F=164.31，p<0.001）。海外城市（79.55）得分最高，北上广深（78.10）次之，然后是其他省会城市或直辖市（76.13），最低是地县级城市（74.17）。
 
 {% echarts %}
 {
@@ -428,11 +538,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '知识总分'
+      name: '知识总分',
+      min: 65.00,
+      max: 85.00
   },
   series: [{
       data: [74.17, 76.13, 78.10, 79.55],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
@@ -451,11 +572,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '知识总分'
+      name: '知识总分',
+      min: 65.00,
+      max: 85.00
   },
   series: [{
       data: [84.12, 77.71, 77.69, 75.12, 74.66],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
@@ -480,11 +612,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '心理疾病识别'
+      name: '心理疾病识别',
+      min: 13.50,
+      max: 17.00
   },
   series: [{
       data: [16.49, 14.66, 15.17, 15.33, 14.79],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
@@ -498,10 +641,21 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '心理疾病治疗',
+      min: 7.80,
+      max: 9.80
   },
   series: [{
       data: [9.64, 8.74, 8.62, 8.63, 8.44],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
@@ -514,11 +668,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '心理疾病预防'
+      name: '心理疾病预防',
+      min: 12.50,
+      max: 15.00
   },
   series: [{
       data: [14.49, 13.21, 13.53, 13.26, 13.22],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
   }]
 };
 {% endecharts %}
@@ -537,11 +702,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '身心健康关联'
+      name: '身心健康关联',
+      min: 4.80,
+      max: 6.40
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [6.23, 5.66, 5.52, 5.40, 5.29],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -555,11 +731,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '自杀预防'
+      name: '自杀预防',
+      min: 6.40,
+      max: 8.00
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [7.52, 6.91, 7.10, 7.75, 7.18],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -578,11 +765,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '儿童保护'
+      name: '儿童保护',
+      min: 9.10,
+      max: 9.80
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [9.72, 9.31, 9.64, 9.72, 9.50],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -595,11 +793,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '儿童教育'
+      name: '儿童教育',
+      min: 0.00,
+      max: 9.00
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [8.22, 5.48, 7.15, 6.33, 5.90],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -614,7 +823,7 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
 
 #### 1.性别差异
 
-独立样本t检验显示，除"认知重评"维度以外，其他各项指标均存在性别差异，达到了统计显著水平。在"情绪觉察"与"分心术"维度上，男性得分略高于女性；在"人际支持"与"心理健康意识"维度上，女性略高于男性。但这些差异量都非常微小。以差异最大的"心理健康意识"为例，男性均值为3.64，女性均值为3.69（t=6.215，p\<.001）。可见，统计差异显著主要是较大的样本量所致。
+独立样本t检验显示，除"认知重评"维度以外，其他各项指标均存在性别差异，达到了统计显著水平。在"情绪觉察"与"分心术"维度上，男性得分略高于女性；在"人际支持"与"心理健康意识"维度上，女性略高于男性。但这些差异量都非常微小。以差异最大的"心理健康意识"为例，男性均值为3.64，女性均值为3.69（t=6.215，p<.001）。可见，统计差异显著主要是较大的样本量所致。
 
 #### 2.年龄差异
 
@@ -630,9 +839,20 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '情绪觉察',
+      min: 2.65,
+      max: 3.10
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       type: 'line',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       data: [2.81, 2.98, 3.04, 3.04, 3.00]
   }],
   tooltip: {
@@ -653,9 +873,20 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '心理健康意识',
+      min: 3.50,
+      max: 3.75
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       type: 'line',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       data: [3.60, 3.67, 3.73, 3.73, 3.72]
   }],
   tooltip: {
@@ -678,9 +909,20 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   yAxis: {
       type: 'value',
       name: '认知重评',
+      min: 2.40,
+      max: 2.75
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       type: 'line',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
       data: [2.65, 2.65, 2.71, 2.69, 2.53]
   }],
   tooltip: {
@@ -713,11 +955,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '认知重评'
+      name: '认知重评',
+      min: 2.58,
+      max: 2.78
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [2.76, 2.67, 2.70, 2.75, 2.65],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -730,11 +983,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '情绪觉察'
+      name: '情绪觉察',
+      min: 2.80,
+      max: 3.20
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [3.17, 2.93, 3.02, 3.01, 2.93],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -747,11 +1011,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '人际支持'
+      name: '人际支持',
+      min: 2.15,
+      max: 2.60
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [2.56, 2.44, 2.45, 2.41, 2.30],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -764,11 +1039,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '分心术'
+      name: '分心术',
+      min: 2.62,
+      max: 2.76
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [2.67, 2.75, 2.73, 2.68, 2.67],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -785,11 +1071,22 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
   },
   yAxis: {
       type: 'value',
-      name: '心理健康意识'
+      name: '心理健康意识',
+      min: 3.60,
+      max: 3.76
   },
   series: [{
+      itemStyle: {
+        normal: {color: 'SteelBlue'}
+      },
       data: [3.74, 3.73, 3.69, 3.67, 3.66],
-      type: 'bar'
+      type: 'bar',
+      label: {
+        normal: {
+          show: true,
+          position: 'top'
+        }
+      },
   }]
 };
 {% endecharts %}
@@ -800,7 +1097,7 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
 
 #### 1. 心理健康素养各维度之间的内部关系
 
-心理健康知识总分与心理健康意识（重视心理健康）呈轻微正相关，达到显著水平（r=0.08，p\<0.001）。知识总分与认知重评呈轻微正相关，达到显著水平（r=0.04，p\<0.001）；与人际支持无显著相关（r=0.01，p\>0.05）；与情绪觉察呈轻微正相关，达到显著水平（r=0.08，p\<0.001）；与分心术呈轻微负相关，达到显著水平（r=-0.06，p\<0.001）。
+心理健康知识总分与心理健康意识（重视心理健康）呈轻微正相关，达到显著水平（r=0.08，p<0.001）。知识总分与认知重评呈轻微正相关，达到显著水平（r=0.04，p<0.001）；与人际支持无显著相关（r=0.01，p\>0.05）；与情绪觉察呈轻微正相关，达到显著水平（r=0.08，p<0.001）；与分心术呈轻微负相关，达到显著水平（r=-0.06，p<0.001）。
 
 这一结果显示心理健康素养问卷中测量的知识、技能、意识三者相对独立，分别反映了素养的不同层面。
 
@@ -912,7 +1209,10 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
     xAxis: {
         type: 'value',
         name: '知晓率',
-        boundaryGap: [0, 0.01]
+        boundaryGap: [0, 0.01],
+        min: 0.0,
+        max: 100.0,
+        interval: 10.0
     },
     yAxis: {
         type: 'category',
@@ -928,12 +1228,15 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
         {
             name: '女',
             type: 'bar',
-            data: [99.4, 93.1, 91.3, 90.9, 90.1, 87.5, 78.1, 73.9, 72.6, 63.7, 62.4, 58.9, 50.6, 50.0, 43.1]
+            data: [99.4, 93.1, 91.3, 90.9, 90.1, 87.5, 78.1, 73.9, 72.6, 63.7, 62.4, 58.9, 50.6, 50.0, 43.1],
         },
         {
             name: '男',
             type: 'bar',
-            data: [99.1, 91.6, 91.9, 88.4, 89.9, 85.2, 62.7, 72.1, 62.0, 53.9, 51.8, 52.2, 49.5, 42.4, 45.2]
+            data: [99.1, 91.6, 91.9, 88.4, 89.9, 85.2, 62.7, 72.1, 62.0, 53.9, 51.8, 52.2, 49.5, 42.4, 45.2],
+            itemStyle: {
+              normal: {color: 'SteelBlue'}
+            },
         }
     ]
 };
@@ -968,7 +1271,10 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
     },
     yAxis: {
         type: 'value',
-        name: '选中率（%）'
+        name: '选中率（%）',
+        min: 0.0,
+        max: 100.0,
+        interval: 10.0
     },
     tooltip: {
         trigger: 'axis'
