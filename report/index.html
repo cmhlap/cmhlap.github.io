@@ -108,9 +108,9 @@
 <meta property="og:image" content="https://cmhlap.github.io/images/bluebook-3-0.png">
 <meta property="og:image" content="https://cmhlap.github.io/images/bluebook-4-0.png">
 <meta property="og:image" content="https://cmhlap.github.io/images/bluebook-4-1.png">
-<meta property="og:image" content="https://cmhlap.github.io/report/media/bluebook-5-0.png">
-<meta property="og:image" content="https://cmhlap.github.io/report/media/bluebook-5-1.png">
-<meta property="og:updated_time" content="2019-02-17T04:57:53.731Z">
+<meta property="og:image" content="https://cmhlap.github.io/images/bluebook-5-0.png">
+<meta property="og:image" content="https://cmhlap.github.io/images/bluebook-5-1.png">
+<meta property="og:updated_time" content="2019-02-17T07:53:16.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018 年国民心理健康素养调查报告">
 <meta name="twitter:description" content="摘要国民心理健康素养是健康素养中的重要组成成分。心理健康素养是指帮助人们认识、处理或者预防心理疾病的相关知识和信念。心理健康素养过低，将阻碍对心理疾病的有效预防和及时求助，不利于维护和提升国民心理健康总体水平。基于健康素养的结构，我们从心理健康的知识、技能与意识三方面进行心理健康素养的评估，设计了具有良好的内容效度、结构效度的《心理健康素养问卷》，并通过网络途径进行了调查。本报告基于其中的1489">
@@ -366,6 +366,8 @@
     
 
 
+    <!-- echarts -->
+    <script type="text/javascript" src="/js/src/echarts.common.min.js"></script>
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -651,72 +653,741 @@
 <h4 id="3-流调中心抑郁量表简版"><a href="#3-流调中心抑郁量表简版" class="headerlink" title="3.流调中心抑郁量表简版"></a>3.流调中心抑郁量表简版</h4><p>流调中心抑郁量表（The Center for Epidemiological Studies Depression<br>Scale,<br>CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际上被广泛用于对普通人群进行抑郁症状的筛查，要求被试使用0-3评定最近一周内症状出现的频度。CES-D原版为20题，本次调查使用根据我国常模编制的9题简版，与原版相关在0.94-0.96（何津等，2013）。在本研究中的Cronbach<br>α系数为0.90。</p>
 <h4 id="4-非理性信念问卷"><a href="#4-非理性信念问卷" class="headerlink" title="4.非理性信念问卷"></a>4.非理性信念问卷</h4><p>采用Ellis的11条非理性信念，例如”人必须要让周围每个重要的人都喜欢和认可自己”，询问调查对象对这些句子的赞同程度。使用4点评估，分别为：非常赞同、比较赞同、不太赞同、非常反对。在本研究中的Cronbach<br>α系数为0.82。</p>
 <h4 id="5-背景信息问卷"><a href="#5-背景信息问卷" class="headerlink" title="5.背景信息问卷"></a>5.背景信息问卷</h4><p>询问调查对象的个人信息，包括性别、年龄、学历、所在城市、目前职业等；询问调查对象的心理健康相关教育背景和资质，包括学位是否与心理学相关、是否参加过心理学类的课程，是否持有国家二级或三级咨询师证、心理治疗师证、社会工作者证或其他与心理学相关的从业证书，是否为中国心理学会注册的心理师或督导师；询问调查对象的自评心理健康状况，回答分为”良好”、”一般”、”不佳”3个选项。</p>
-<h2 id="四、调查结果"><a href="#四、调查结果" class="headerlink" title="四、调查结果"></a>四、调查结果</h2><h3 id="（一）心理健康知识的群体差异"><a href="#（一）心理健康知识的群体差异" class="headerlink" title="（一）心理健康知识的群体差异"></a>（一）心理健康知识的群体差异</h3><h4 id="1-性别差异"><a href="#1-性别差异" class="headerlink" title="1.性别差异"></a>1.性别差异</h4><p>独立样本t检验发现，心理健康知识总分和各维度知识得分在不同性别上均存在显著差异。总分上女性为76.68分，男性为74.36分（t=12.50，p\&lt;.001），女性高于男性。在具体维度得分上，除危机干预与自杀预防知识得分是男性（7.28）略高于女性（7.15）以外，其他所有维度得分都是女性略高于男性。</p>
+<h2 id="四、调查结果"><a href="#四、调查结果" class="headerlink" title="四、调查结果"></a>四、调查结果</h2><h3 id="（一）心理健康知识的群体差异"><a href="#（一）心理健康知识的群体差异" class="headerlink" title="（一）心理健康知识的群体差异"></a>（一）心理健康知识的群体差异</h3><h4 id="1-性别差异"><a href="#1-性别差异" class="headerlink" title="1.性别差异"></a>1.性别差异</h4><p>独立样本t检验发现，心理健康知识总分和各维度知识得分在不同性别上均存在显著差异。总分上女性为76.68分，男性为74.36分（t=12.50，p&lt;.001），女性高于男性。在具体维度得分上，除危机干预与自杀预防知识得分是男性（7.28）略高于女性（7.15）以外，其他所有维度得分都是女性略高于男性。</p>
 <h4 id="2-年龄差异"><a href="#2-年龄差异" class="headerlink" title="2.年龄差异"></a>2.年龄差异</h4><p>单因素方差分析显示，心理健康知识得分在不同年龄段存在显著差异（F=171.88，p\&lt;0.001），总体上呈现年龄越大知识总分越低的趋势。得分最高的是25-34与35-44年龄组，显著高于其他各年龄组；其次是18-24与45-54年龄组，显著高于55-80年龄组。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts3405" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3405'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '知识总分',
+  },
+  series: [{
+      type: 'line',
+      data: [75.1, 77.8, 77.1, 74.8, 68.2]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图4 心理健康知识总分的年龄差异</p>
 <p>不同维度上的年龄差异略有不同。其中，中年组关于儿童的心理健康知识相对较高：在儿童教育维度上，得分最高的是35-44年龄组，其次是25-34与45-54年龄组，最低的是18-24与55-80年龄组；在儿童保护维度上，得分最高的是25-34与35-44年龄组，其次是45-54年龄组，再次是18-24年龄组，最低是55-80年龄组。心身健康方面、心理疾病成因与预防方面，也呈现出中年组得分最高的特征。其他的维度则呈现与总分趋势一致的年龄差异。</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts6131" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6131'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病治疗',
+  },
+  series: [{
+      type: 'line',
+      data: [8.52, 8.76, 8.61, 8.44, 7.80]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts8683" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8683'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病识别',
+  },
+  series: [{
+      type: 'line',
+      data: [14.92, 15.34, 15.06, 14.58, 13.13]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts5209" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5209'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病预防',
+  },
+  series: [{
+      type: 'line',
+      data: [13.05, 13.36, 13.53, 13.61, 13.15]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts3667" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3667'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '身心健康关联',
+  },
+  series: [{
+      type: 'line',
+      data: [5.11, 5.53, 5.57, 5.53, 5.30]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts9388" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9388'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '自杀预防',
+  },
+  series: [{
+      type: 'line',
+      data: [7.68, 7.37, 6.91, 6.66, 6.09]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts1429" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1429'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '儿童保护',
+  },
+  series: [{
+      type: 'line',
+      data: [9.35, 9.64, 9.64, 9.52, 9.07]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts2729" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2729'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '儿童教育',
+  },
+  series: [{
+      type: 'line',
+      data: [5.12, 6.46, 6.98, 6.52, 5.18]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts8166" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8166'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '其他知识与原理',
+  },
+  series: [{
+      type: 'line',
+      data: [11.32, 11.33, 10.80, 9.93, 8.52]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图5 心理健康知识各维度的年龄差异</p>
 <p>（图5a-图5h）</p>
-<h4 id="3-学历差异"><a href="#3-学历差异" class="headerlink" title="3.学历差异"></a>3.学历差异</h4><p>心理健康知识的总分及各维度得分均呈现显著的学历差异，趋势都是随着学历升高得分也增高。以总分为例（F=545.58，p\&lt;0.001），初中及以下学历者均分为65.91，高中或中专学历者为70.45，大专学历者为71.68，大学学历者为77.50，硕士为80.44，博士为81.15。除了硕士与博士学历的得分之间差异未达到显著以外，其他组间差异均达到了显著水平。</p>
-<h4 id="4-地域差异"><a href="#4-地域差异" class="headerlink" title="4.地域差异"></a>4.地域差异</h4><p>单因素方差分析显示，心理健康知识得分在不同地域之间存在显著差异（F=116.73，p\&lt;0.001）。海外样本得分最高（80.31），东部地区得分次之（77.26），再次是东北地区（75.85），而西部（74.71）与中部（73.54）地区得分最低。各维度得分大多数也呈现相似的差异。</p>
-<p>[[CHART]]{.chart}</p>
+<h4 id="3-学历差异"><a href="#3-学历差异" class="headerlink" title="3.学历差异"></a>3.学历差异</h4><p>心理健康知识的总分及各维度得分均呈现显著的学历差异，趋势都是随着学历升高得分也增高。以总分为例（F=545.58，p&lt;0.001），初中及以下学历者均分为65.91，高中或中专学历者为70.45，大专学历者为71.68，大学学历者为77.50，硕士为80.44，博士为81.15。除了硕士与博士学历的得分之间差异未达到显著以外，其他组间差异均达到了显著水平。</p>
+<h4 id="4-地域差异"><a href="#4-地域差异" class="headerlink" title="4.地域差异"></a>4.地域差异</h4><p>单因素方差分析显示，心理健康知识得分在不同地域之间存在显著差异（F=116.73，p&lt;0.001）。海外样本得分最高（80.31），东部地区得分次之（77.26），再次是东北地区（75.85），而西部（74.71）与中部（73.54）地区得分最低。各维度得分大多数也呈现相似的差异。</p>
+<div id="echarts6644" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6644'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['中部', '西部', '东北', '东部', '海外']
+  },
+  yAxis: {
+      type: 'value',
+      name: '知识总分'
+  },
+  series: [{
+      data: [73.54, 74.71, 75.85, 77.26, 80.31],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图6 心理健康知识总分的地域差异</p>
 <p>按城市类型比较，也发现不同类型城市之间差异显著（F=164.31，p\&lt;0.001）。海外城市（79.55）得分最高，北上广深（78.10）次之，然后是其他省会城市或直辖市（76.13），最低是地县级城市（74.17）。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts7964" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7964'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['地县级城市', '其他省会或直辖市', '北上广深', '海外城市']
+  },
+  yAxis: {
+      type: 'value',
+      name: '知识总分'
+  },
+  series: [{
+      data: [74.17, 76.13, 78.10, 79.55],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图7 心理健康知识总分的城市类型差异</p>
 <h4 id="5-职业差异"><a href="#5-职业差异" class="headerlink" title="5.职业差异"></a>5.职业差异</h4><p>在心理健康知识总分上，不同职业群体之间存在显著差异。心理健康工作者群体平均分最高，为84.12，显著高于其他职业群体，媒体工作者（77.71）与教育工作者（77.69）次之，最低的是其他职业（75.12）与医疗卫生工作者。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts7315" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7315'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '媒体工作者', '教育工作者', '都不是', '医疗卫生工作者']
+  },
+  yAxis: {
+      type: 'value',
+      name: '知识总分'
+  },
+  series: [{
+      data: [84.12, 77.71, 77.69, 75.12, 74.66],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图8 心理健康知识总分的职业差异</p>
 <p>考虑到样本的性别分布不平衡，我们也分别在两个性别内检验了职业群体差异。女性由于占据总样本比例较大，女性之间的职业群体差异与总样本相似。在男性中，仅心理健康工作者群体得分（82.63）显著高于其他职业群体，而其他职业群体之间无显著差异（媒体工作者、医疗卫生工作者、教育工作者得分分别为75.43、75.15、74.81）。</p>
 <p>考虑到不同的职业在心理健康服务工作中各有侧重，因而熟悉和专长的领域有所不同，所以我们进一步分析了心理健康知识各维度在不同职业中的得分差异。在所有维度上，心理健康工作者的知识得分都属于最高的，而医疗、教育、媒体工作者分别在不同维度上展现出优势。</p>
 <p>具体来说，在心理疾病治疗维度上，心理健康工作者（9.63）得分显著高于其他所有职业群体，而医疗卫生工作者得分（8.74）其次，虽然略高于教育工作者和媒体工作者，但差异并未达到显著水平。但医疗卫生工作者的得分显著高于此外的其他职业群体（8.44）。</p>
 <p>在心理疾病症状与识别维度上，心理健康工作者得分（16.49）显著高于其他职业群体；教育工作者（15.33）与媒体工作者（15.17）其次，显著高于除心理健康工作者以外的其他职业群体；医疗卫生工作者（14.66）与其他职业群体（14.80）最低。</p>
 <p>在心理疾病成因与预防维度上，心理健康工作者得分（14.49）显著高于其他职业群体；教育工作者（13.53）其次，显著高于除心理健康工作者以外的其他职业群体。</p>
-<p>[[CHART]]{.chart}</p>
-<p> [[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts8528" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8528'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病识别'
+  },
+  series: [{
+      data: [16.49, 14.66, 15.17, 15.33, 14.79],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts8089" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8089'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病治疗',
+  },
+  series: [{
+      data: [9.64, 8.74, 8.62, 8.63, 8.44],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts3845" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3845'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理疾病预防'
+  },
+  series: [{
+      data: [14.49, 13.21, 13.53, 13.26, 13.22],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图9a-图9c 心理健康知识各维度的职业差异</p>
 <p>在心身健康维度上，心理健康工作者（6.23）得分显著高于其他所有职业群体，而医疗卫生工作者得分（5.66）其次，再次是教育工作者（5.52）。医疗卫生工作者与教育工作者得分之间差异未达到显著水平，但他们的得分显著高于媒体工作者和其他职业群体。</p>
 <p>在危机干预与自杀预防维度上，媒体工作者（7.75）与心理健康工作者（7.52）得分最高，显著高于其他职业群体。</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts6130" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6130'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '身心健康关联'
+  },
+  series: [{
+      data: [6.23, 5.66, 5.52, 5.40, 5.29],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts9371" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9371'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '自杀预防'
+  },
+  series: [{
+      data: [7.52, 6.91, 7.10, 7.75, 7.18],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图9d-图9e 心理健康知识各维度的职业差异</p>
 <p>在儿童保护维度上，心理健康工作者（9.72）、媒体工作者（9.72）与教育工作者（9.64）得分显著高于其他群体，这三个职业之间的得分没有显著差异。</p>
 <p>在儿童教育维度上，各类职业群体之间差异都达到了显著水平。由高到低依次是心理健康工作者（8.22）、教育工作者（7.15）、媒体工作者（6.33）、其他职业（5.90）、医疗卫生工作者（5.48）。</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts8065" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8065'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '儿童保护'
+  },
+  series: [{
+      data: [9.72, 9.31, 9.64, 9.72, 9.50],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts8683" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8683'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '儿童教育'
+  },
+  series: [{
+      data: [8.22, 5.48, 7.15, 6.33, 5.90],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图9f-图9h 心理健康知识各维度的职业差异</p>
 <p>在基本知识与原理维度上，心理健康工作者最高（11.82），显著高于其他职业群体；媒体工作者（11.29）次之，显著高于除心理健康工作者以外的其他职业群体。</p>
 <p>综合来说，根据本次调查数据，心理健康工作者在所有知识维度上得分都较高，医疗卫生工作者在心身关系、心理疾病治疗等知识维度上得分较高，教育工作者在儿童教育、儿童保护、心理疾病症状与预防等知识维度上得分较高，媒体工作者在危机干预与自杀预防、儿童保护、心理健康基本知识与原理等知识维度上得分较高。需要注意的是，本次调查是通过微信、微博等方式传播，参加答卷者完全出于自愿，所以样本不能很好地代表各类职业群体。因此，本次调查中发现的各类职业群体之间心理健康知识知晓程度的差异还有待未来研究进一步验证。</p>
 <h3 id="（二）心理健康技能与意识的群体差异"><a href="#（二）心理健康技能与意识的群体差异" class="headerlink" title="（二）心理健康技能与意识的群体差异"></a>（二）心理健康技能与意识的群体差异</h3><h4 id="1-性别差异-1"><a href="#1-性别差异-1" class="headerlink" title="1.性别差异"></a>1.性别差异</h4><p>独立样本t检验显示，除”认知重评”维度以外，其他各项指标均存在性别差异，达到了统计显著水平。在”情绪觉察”与”分心术”维度上，男性得分略高于女性；在”人际支持”与”心理健康意识”维度上，女性略高于男性。但这些差异量都非常微小。以差异最大的”心理健康意识”为例，男性均值为3.64，女性均值为3.69（t=6.215，p\&lt;.001）。可见，统计差异显著主要是较大的样本量所致。</p>
 <h4 id="2-年龄差异-1"><a href="#2-年龄差异-1" class="headerlink" title="2.年龄差异"></a>2.年龄差异</h4><p>单因素方差分析发现，心理健康技能与意识的各维度都存在显著的年龄差异，除”认知重评”维度以外，各维度均表现出得分随年龄升高的趋势。以”情绪觉察”和”心理健康意识”为例，如下图所示。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts1460" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1460'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '情绪觉察',
+  },
+  series: [{
+      type: 'line',
+      data: [2.81, 2.98, 3.04, 3.04, 3.00]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图10 情绪觉察维度的年龄差异</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts9416" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9416'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理健康意识',
+  },
+  series: [{
+      type: 'line',
+      data: [3.60, 3.67, 3.73, 3.73, 3.72]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图11 心理健康意识的年龄差异</p>
 <p>“认知重评”维度表现出不同的年龄差异。得分最高的是35-44岁年龄组（2.71），得分最低的是55-80岁年龄组（2.52）。组间差异达到显著水平。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts6864" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6864'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      name: '年龄段',
+      data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+  },
+  yAxis: {
+      type: 'value',
+      name: '认知重评',
+  },
+  series: [{
+      type: 'line',
+      data: [2.65, 2.65, 2.71, 2.69, 2.53]
+  }],
+  tooltip: {
+    trigger: 'axis',
+  }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图12 认知重评维度的年龄差异</p>
-<h4 id="3-学历差异-1"><a href="#3-学历差异-1" class="headerlink" title="3.学历差异"></a>3.学历差异</h4><p>心理健康行为与意识的得分也多呈现显著的学历差异。总体趋势是高学历者（硕士、博士）显著高于低学历者（大学以下学历）。例如，在人际支持维度上，得分最高的是硕士（2.44）与博士（2.48）学历者，其次是大学（2.35）与大专（2.36）学历者，最低的是高中或中专（2.23）与初中及以下（2.26）学历者，组间差异显著（F=26.81，p\&lt;0.001）。在心理健康意识上也呈现类似的差异，组间差异显著（F=37.57，p\&lt;0.001）。</p>
+<h4 id="3-学历差异-1"><a href="#3-学历差异-1" class="headerlink" title="3.学历差异"></a>3.学历差异</h4><p>心理健康行为与意识的得分也多呈现显著的学历差异。总体趋势是高学历者（硕士、博士）显著高于低学历者（大学以下学历）。例如，在人际支持维度上，得分最高的是硕士（2.44）与博士（2.48）学历者，其次是大学（2.35）与大专（2.36）学历者，最低的是高中或中专（2.23）与初中及以下（2.26）学历者，组间差异显著（F=26.81，p&lt;0.001）。在心理健康意识上也呈现类似的差异，组间差异显著（F=37.57，p&lt;0.001）。</p>
 <h4 id="4-地域差异-1"><a href="#4-地域差异-1" class="headerlink" title="4.地域差异"></a>4.地域差异</h4><p>单因素方差分析显示，不同地区之间的差异较小，仅部分维度在某些地区之间差异显著。心理健康技能的维度大多没有显著差异。心理健康意识的得分，中部地区最低（3.62），显著低于其他地区。西部地区较低（3.67），显著低于得分最高的海外地区（3.73）。</p>
 <p>不同类型城市之间也发现了轻微的差异，主要表现在：”情绪觉察”维度上，”北上广深”（3.02）显著高于其他地区；”人际支持”维度上，”北上广深”（2.38）显著高于海外城市（2.30）；”分心术”维度上，”海外城市”显著低于其他城市。在心理健康意识上，”北上广深”与海外城市，高于其他省会城市或直辖市、地县级城市。但这些差异量都比较微小。</p>
-<h4 id="5-职业差异-1"><a href="#5-职业差异-1" class="headerlink" title="5.职业差异"></a>5.职业差异</h4><p>单因素方差分析显示，不同职业群体之间在心理健康技能与意识上的得分存在显著差异。在”情绪觉察”、”认知重评”和”人际支持\”维度上，都是心理健康工作者最高。在”分心术”维度上，医疗卫生工作者得分高于其他群体。</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
-<p>[[CHART]]{.chart}</p>
+<h4 id="5-职业差异-1"><a href="#5-职业差异-1" class="headerlink" title="5.职业差异"></a>5.职业差异</h4><p>单因素方差分析显示，不同职业群体之间在心理健康技能与意识上的得分存在显著差异。在”情绪觉察”、”认知重评”和”人际支持”维度上，都是心理健康工作者最高。在”分心术”维度上，医疗卫生工作者得分高于其他群体。</p>
+<div id="echarts4221" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4221'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '认知重评'
+  },
+  series: [{
+      data: [2.76, 2.67, 2.70, 2.75, 2.65],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts2206" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2206'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '情绪觉察'
+  },
+  series: [{
+      data: [3.17, 2.93, 3.02, 3.01, 2.93],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts2644" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2644'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '人际支持'
+  },
+  series: [{
+      data: [2.56, 2.44, 2.45, 2.41, 2.30],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts3883" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3883'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '分心术'
+  },
+  series: [{
+      data: [2.67, 2.75, 2.73, 2.68, 2.67],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图13a-图13d 心理健康行为各维度的职业差异</p>
 <p>在心理健康意识上，心理健康工作者（3.74）最高，教育工作者次之（3.73），再次是媒体工作者（3.69），偏低的是医疗卫生工作者（3.67）与其他职业群体（3.66）。如图14所示。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts2434" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2434'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  xAxis: {
+      type: 'category',
+      data: ['心理健康工作者', '医疗卫生工作者', '教育工作者', '媒体工作者', '都不是']
+  },
+  yAxis: {
+      type: 'value',
+      name: '心理健康意识'
+  },
+  series: [{
+      data: [3.74, 3.73, 3.69, 3.67, 3.66],
+      type: 'bar'
+  }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图14 心理健康意识的职业差异</p>
 <h3 id="（三）心理健康素养等变量之间的相关分析"><a href="#（三）心理健康素养等变量之间的相关分析" class="headerlink" title="（三）心理健康素养等变量之间的相关分析"></a>（三）心理健康素养等变量之间的相关分析</h3><h4 id="1-心理健康素养各维度之间的内部关系"><a href="#1-心理健康素养各维度之间的内部关系" class="headerlink" title="1. 心理健康素养各维度之间的内部关系"></a>1. 心理健康素养各维度之间的内部关系</h4><p>心理健康知识总分与心理健康意识（重视心理健康）呈轻微正相关，达到显著水平（r=0.08，p\&lt;0.001）。知识总分与认知重评呈轻微正相关，达到显著水平（r=0.04，p\&lt;0.001）；与人际支持无显著相关（r=0.01，p>0.05）；与情绪觉察呈轻微正相关，达到显著水平（r=0.08，p\&lt;0.001）；与分心术呈轻微负相关，达到显著水平（r=-0.06，p\&lt;0.001）。</p>
 <p>这一结果显示心理健康素养问卷中测量的知识、技能、意识三者相对独立，分别反映了素养的不同层面。</p>
@@ -725,32 +1396,627 @@
 <p>心理健康意识与自评心理健康状况相关显著但很小，相关系数为0.03；与抑郁也呈显著的负相关，为-0.10。</p>
 <p>以抑郁得分为因变量进行多元回归分析，将人口学特征（性别、年龄、学历）作为第一层放入，第二层放入心理健康知识与意识，第三层分别放入心理健康行为的各维度（情绪觉察、认知重评、人际支持、分心术）。回归分析的结果见表3。</p>
 <p>表3 对抑郁水平的多元回归结果</p>
-<p>+—————-+—————-+—————–+<br>|                | &gt; 标准回归系数 | &gt; t值           |<br>+—————-+—————-+—————–+<br>| 模型1          |                |                 |<br>+—————-+—————-+—————–+<br>| &gt; 性别         | &gt; -0.03        | &gt; -2.487*      |<br>+—————-+—————-+—————–+<br>| &gt; 年龄         | &gt; -0.21        | &gt; -18.288**   |<br>+—————-+—————-+—————–+<br>| &gt; 学历         | &gt; -0.05        | &gt; -4.300**    |<br>+—————-+—————-+—————–+<br>| 模型2          |                |                 |<br>+—————-+—————-+—————–+<br>| &gt; 性别         | &gt; -0.03        | &gt; -2.455*      |<br>+—————-+—————-+—————–+<br>| &gt; 年龄         | &gt; -0.21        | &gt; -17.363**   |<br>+—————-+—————-+—————–+<br>| &gt; 学历         | &gt; -0.05        | &gt; -4.186**    |<br>+—————-+—————-+—————–+<br>| &gt; 心理健康知识 | &gt; 0.02         | &gt; 1.761         |<br>+—————-+—————-+—————–+<br>| &gt; 心理健康意识 | &gt; -0.05        | &gt; -3.927**    |<br>+—————-+—————-+—————–+<br>| 模型3          |                |                 |<br>+—————-+—————-+—————–+<br>| &gt; 性别         | &gt; -0.01        | &gt; -1.178        |<br>+—————-+—————-+—————–+<br>| &gt; 年龄         | &gt; -0.14        | &gt; - 13.129** |<br>+—————-+—————-+—————–+<br>| &gt; 学历         | &gt; -0.01        | &gt; -0.661        |<br>+—————-+—————-+—————–+<br>| &gt; 心理健康知识 | &gt; -0.00        | &gt; -0.219        |<br>+—————-+—————-+—————–+<br>| &gt; 心理健康意识 | &gt; 0.01         | &gt; 1.379         |<br>+—————-+—————-+—————–+<br>| &gt; 情绪觉察     | &gt; -0.27        | &gt; -23.329**   |<br>+—————-+—————-+—————–+<br>| &gt; 认知重评     | &gt; -0.06        | &gt; -4.740**    |<br>+—————-+—————-+—————–+<br>| &gt; 人际支持     | &gt; -0.32        | &gt; -28.433**   |<br>+—————-+—————-+—————–+<br>| &gt; 分心术       | &gt; -0.41        | &gt; -37.976**   |<br>+—————-+—————-+—————–+</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>标准回归系数</th>
+<th>t值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 模型1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>性别</td>
+<td>-0.03</td>
+<td>-2.487*      </td>
+</tr>
+<tr>
+<td></td>
+<td>年龄</td>
+<td>-0.21</td>
+<td>-18.288**   </td>
+</tr>
+<tr>
+<td></td>
+<td>学历</td>
+<td>-0.05</td>
+<td>-4.300**    </td>
+</tr>
+<tr>
+<td> 模型2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>性别</td>
+<td>-0.03</td>
+<td>-2.455*      </td>
+</tr>
+<tr>
+<td></td>
+<td>年龄</td>
+<td>-0.21</td>
+<td>-17.363**   </td>
+</tr>
+<tr>
+<td></td>
+<td>学历</td>
+<td>-0.05</td>
+<td>-4.186**    </td>
+</tr>
+<tr>
+<td></td>
+<td>心理健康知识</td>
+<td>0.02</td>
+<td>1.761         </td>
+</tr>
+<tr>
+<td></td>
+<td>心理健康意识</td>
+<td>-0.05</td>
+<td>-3.927**    </td>
+</tr>
+<tr>
+<td> 模型3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>性别</td>
+<td>-0.01</td>
+<td>-1.178        </td>
+</tr>
+<tr>
+<td></td>
+<td>年龄</td>
+<td>-0.14</td>
+<td>- 13.129** </td>
+</tr>
+<tr>
+<td></td>
+<td>学历</td>
+<td>-0.01</td>
+<td>-0.661        </td>
+</tr>
+<tr>
+<td></td>
+<td>心理健康知识</td>
+<td>-0.00</td>
+<td>-0.219        </td>
+</tr>
+<tr>
+<td></td>
+<td>心理健康意识</td>
+<td>0.01</td>
+<td>1.379         </td>
+</tr>
+<tr>
+<td></td>
+<td>情绪觉察</td>
+<td>-0.27</td>
+<td>-23.329**   </td>
+</tr>
+<tr>
+<td></td>
+<td>认知重评</td>
+<td>-0.06</td>
+<td>-4.740**    </td>
+</tr>
+<tr>
+<td></td>
+<td>人际支持</td>
+<td>-0.32</td>
+<td>-28.433**   </td>
+</tr>
+<tr>
+<td></td>
+<td>分心术</td>
+<td>-0.41</td>
+<td>-37.976**   </td>
+</tr>
+</tbody>
+</table>
 <p>由表3可见，（1）心理健康知识总分始终对抑郁没有显著的影响；（2）在未放入心理健康行为维度的时候，心理健康意识的回归系数显著，但放入行为维度后变为不显著，这提示着意识的影响很可能是通过行为发生的；（3）心理健康行为的各个维度均对抑郁回归显著；（4）在未放入心理健康行为维度的时候，学历的回归系数显著，但放入行为维度后变为不显著。</p>
 <h4 id="3-教育培训对心理健康素养的影响"><a href="#3-教育培训对心理健康素养的影响" class="headerlink" title="3.教育培训对心理健康素养的影响"></a>3.教育培训对心理健康素养的影响</h4><p>本次调查中，2020人拥有与心理学相关的学位，占总样本的13.6%。在剩余没有相关学位的答卷者中，有5277人参加过各类心理学课程，占总样本的35.4%。通过比较这些群体之间的差异，可以看到心理学相关教育或培训经历对心理健康素养的影响。</p>
 <p>独立样本t检验发现，心理健康素养各维度，除”分心术”以外，都受到相关教育经历的影响，拥有与心理学相关学位的答卷者得分更高。例如，拥有相关学位者知识总分平均为80.04，其他人的知识总分平均为75.56，如图15所示。</p>
 <p>分析还发现，没有相关学位，但参加过心理学类课程的答卷者在许多维度上得分也更高，但”分心术”和”情绪觉察”这两个维度不受影响。例如，参加过心理学课程者知识总分平均为77.44，未参加过的答卷者知识总分平均为74.25。如图16所示。</p>
 <p>上述结果提示，心理学类的教育、培训不仅能提高心理健康的知识水平，而且也能提高意识和技能，进而提升心理健康水平。同时也提示着，心理健康行为各维度所需要的专业基础程度不同，似乎”分心术”更加源自日常生活而不太受到专业培训的影响。</p>
-<p><img src="media/bluebook-5-0.png" alt="图片">{width=”6.607595144356956in”<br>height=”3.5440332458442696in”}</p>
+<p><img src="/images/bluebook-5-0.png" alt=""></p>
 <p>图15 心理学相关学位与课程对心理健康知识得分的影响</p>
-<p><img src="media/bluebook-5-1.png" alt="图片">{width=”7.313953412073491in”<br>height=”3.056459973753281in”}</p>
+<p><img src="/images/bluebook-5-1.png" alt=""></p>
 <p>图16 是否参加过心理学课程对心理健康行为得分的影响</p>
 <h3 id="（四）心理疾病知晓率的状况"><a href="#（四）心理疾病知晓率的状况" class="headerlink" title="（四）心理疾病知晓率的状况"></a>（四）心理疾病知晓率的状况</h3><h4 id="1-常见心理疾病的知晓率"><a href="#1-常见心理疾病的知晓率" class="headerlink" title="1.常见心理疾病的知晓率"></a>1.常见心理疾病的知晓率</h4><p>针对调查的15种常见心理疾病，调查对象回答的知晓率见表3。表3按照疾病在总样本中的知晓度由高到低排序。可见，知晓率最高的是抑郁症，这与前人研究结果一致。根据本研究的提问方式，此处的知晓率仅表示调查对象听说过这种疾病名称，不代表调查对象确切了解该种疾病的特征，不代表调查对象能够准确识别该种疾病。由表3可见，公众知晓率高于90%的是列在前五种的疾病：抑郁症、焦虑症、精神分裂症、强迫症、自闭症（孤独症）。公众知晓率不足50%的是列在最后的两种疾病：读写困难、惊恐障碍。</p>
 <p>表4 15种疾病的总样本知晓率与重点职业群体知晓百分比</p>
-<p>+———+———+———+———+———+———+———+<br>|         | 总样本  | 心理健康工作者 | 医疗卫生工作者 | 教育工作者 | 媒体工作者 | 其他职业 |<br>+=========+=========+=========+=========+=========+=========+=========+<br>| 1.  抑郁症 | 99.3 | 97.9    | 98.5    | 99.7    | 99.3    | 99.4    |<br>+———+———+———+———+———+———+———+<br>| 1.  焦虑症 | 92.7 | 96.2    | 95.9    | 92.8    | 93.1    | 92.1    |<br>+———+———+———+———+———+———+———+<br>| 1.  精神分 | 91.4 | 90.3    | 86.1    | 91.5    | 93.4    | 92.1    |<br>| 裂症    |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  强迫症 | 90.2 | 95.9    | 94.0    | 91.1    | 91.7    | 89.1    |<br>+———+———+———+———+———+———+———+<br>| 1.  自闭症 | 90.1 | 84.3    | 88.2    | 90.7    | 90.9    | 90.5    |<br>| （孤独症） |      |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  躁狂症 | 86.9 | 92.1    | 84.1    | 86.7    | 90.3    | 86.7    |<br>+———+———+———+———+———+———+———+<br>| 1.  神经性 | 74.1 | 88.8    | 81.8    | 75.6    | 75.0    | 71.8    |<br>| 厌食症  |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  人格障 | 73.5 | 90.6    | 75.5    | 74.3    | 78.1    | 71.6    |<br>| 碍      |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  创伤后 | 69.8 | 93.8    | 75.8    | 66.8    | 75.0    | 67.8    |<br>| 应激障碍 |        |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  贪食症 | 61.2 | 86.8    | 68.2    | 63.1    | 63.9    | 57.9    |<br>+———+———+———+———+———+———+———+<br>| 1.  双相情 | 59.6 | 91.5    | 65.7    | 56.3    | 64.6    | 57.2    |<br>| 感障碍/躁郁症 |   |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  阿尔兹 | 57.2 | 65.0    | 54.8    | 55.1    | 62.6    | 57.2    |<br>| 海默症  |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  疑病症 | 50.3 | 88.8    | 65.5    | 49.3    | 49.0    | 46.2    |<br>+———+———+———+———+———+———+———+<br>| 1.  读写困 | 48.0 | 64.4    | 49.3    | 50.3    | 53.1    | 45.8    |<br>| 难      |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+<br>| 1.  惊恐障 | 43.7 | 85.6    | 58.2    | 43.4    | 41.3    | 39.2    |<br>| 碍      |         |         |         |         |         |         |<br>+———+———+———+———+———+———+———+</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>总样本</th>
+<th>心理健康工作者</th>
+<th>医疗卫生工作者</th>
+<th>教育工作者</th>
+<th>媒体工作者</th>
+<th>其他职业 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>抑郁症</td>
+<td>99.3</td>
+<td>97.9</td>
+<td>98.5</td>
+<td>99.7</td>
+<td>99.3</td>
+<td>99.4 </td>
+</tr>
+<tr>
+<td>焦虑症</td>
+<td>92.7</td>
+<td>96.2</td>
+<td>95.9</td>
+<td>92.8</td>
+<td>93.1</td>
+<td>92.1 </td>
+</tr>
+<tr>
+<td>精神分裂症</td>
+<td>91.4</td>
+<td>90.3</td>
+<td>86.1</td>
+<td>91.5</td>
+<td>93.4</td>
+<td>92.1 </td>
+</tr>
+<tr>
+<td>强迫症</td>
+<td>90.2</td>
+<td>95.9</td>
+<td>94.0</td>
+<td>91.1</td>
+<td>91.7</td>
+<td>89.1 </td>
+</tr>
+<tr>
+<td>自闭症（孤独症）</td>
+<td>90.1</td>
+<td>84.3</td>
+<td>88.2</td>
+<td>90.7</td>
+<td>90.9</td>
+<td>90.5 </td>
+</tr>
+<tr>
+<td>躁狂症</td>
+<td>86.9</td>
+<td>92.1</td>
+<td>84.1</td>
+<td>86.7</td>
+<td>90.3</td>
+<td>86.7 </td>
+</tr>
+<tr>
+<td>神经性厌食症</td>
+<td>74.1</td>
+<td>88.8</td>
+<td>81.8</td>
+<td>75.6</td>
+<td>75.0</td>
+<td>71.8 </td>
+</tr>
+<tr>
+<td>人格障碍</td>
+<td>73.5</td>
+<td>90.6</td>
+<td>75.5</td>
+<td>74.3</td>
+<td>78.1</td>
+<td>71.6 </td>
+</tr>
+<tr>
+<td>创伤后应激障碍</td>
+<td>69.8</td>
+<td>93.8</td>
+<td>75.8</td>
+<td>66.8</td>
+<td>75.0</td>
+<td>67.8 </td>
+</tr>
+<tr>
+<td>贪食症</td>
+<td>61.2</td>
+<td>86.8</td>
+<td>68.2</td>
+<td>63.1</td>
+<td>63.9</td>
+<td>57.9 </td>
+</tr>
+<tr>
+<td>双相情感障碍/躁郁症</td>
+<td>59.6</td>
+<td>91.5</td>
+<td>65.7</td>
+<td>56.3</td>
+<td>64.6</td>
+<td>57.2 </td>
+</tr>
+<tr>
+<td>阿尔兹海默症</td>
+<td>57.2</td>
+<td>65.0</td>
+<td>54.8</td>
+<td>55.1</td>
+<td>62.6</td>
+<td>57.2 </td>
+</tr>
+<tr>
+<td>疑病症</td>
+<td>50.3</td>
+<td>88.8</td>
+<td>65.5</td>
+<td>49.3</td>
+<td>49.0</td>
+<td>46.2 </td>
+</tr>
+<tr>
+<td>读写困难</td>
+<td>48.0</td>
+<td>64.4</td>
+<td>49.3</td>
+<td>50.3</td>
+<td>53.1</td>
+<td>45.8 </td>
+</tr>
+<tr>
+<td>惊恐障碍</td>
+<td>43.7</td>
+<td>85.6</td>
+<td>58.2</td>
+<td>43.4</td>
+<td>41.3</td>
+<td>39.2 </td>
+</tr>
+</tbody>
+</table>
 <p>我们比较了不同职业对这15种疾病的知晓率，大的趋势上与总样本基本一致。其中比较突出的差异是，心理健康工作者对于人格障碍、创伤后应激障碍、贪食症、双相情感障碍、疑病症、读写困难、惊恐障碍这几类心理疾病的知晓率高于其他群体至少10个百分点以上。本次调查中心理健康工作者对15种疾病的总体知晓度也高于其他职业群体。</p>
 <p>在各种疾病的知晓率上也存在性别差异，除对于精神分裂症和惊恐障碍的知晓率以外，其他疾病的知晓率都是女性高于男性。参见图17所示。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts9703" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9703'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['女', '男']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        name: '知晓率',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: [
+          '抑郁症', '焦虑症', '精神分裂症', 
+          '强迫症', '自闭症（孤独症）', '躁狂症',
+          '神经性厌食症', '人格障碍', '创伤后应激障碍',
+          '贪食症', '双向情感障碍（躁郁症）', '阿尔兹海默症',
+          '疑病症', '读写困难', '惊恐障碍'
+        ]
+    },
+    series: [
+        {
+            name: '女',
+            type: 'bar',
+            data: [99.4, 93.1, 91.3, 90.9, 90.1, 87.5, 78.1, 73.9, 72.6, 63.7, 62.4, 58.9, 50.6, 50.0, 43.1]
+        },
+        {
+            name: '男',
+            type: 'bar',
+            data: [99.1, 91.6, 91.9, 88.4, 89.9, 85.2, 62.7, 72.1, 62.0, 53.9, 51.8, 52.2, 49.5, 42.4, 45.2]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图17 疾病知晓率的性别差异</p>
 <h4 id="2-老年常见心理疾病的知晓率"><a href="#2-老年常见心理疾病的知晓率" class="headerlink" title="2.老年常见心理疾病的知晓率"></a>2.老年常见心理疾病的知晓率</h4><p>老年痴呆症、抑郁症在老年是高发疾病，此外，老年精神分裂症发病率也较高。其他三种疾病则是作为混淆支呈现。调查对象对这6类疾病中的哪些在老年期发病率较高做出选择，选中率如表4所示。可见，老年痴呆症的选中率为97.5%，远远超过其他疾病。说明公众对于老年高发老年痴呆症的知晓率很高。但对于抑郁症的选中率仅53.4%，精神分裂症的选中率更是低至17.6%。</p>
 <p>对比不同职业群体的选中率发现，心理健康工作者对抑郁症的选中率为74.4%，大大高于其他职业群体；医疗卫生工作者对精神分裂症的选中率为20.6%，略高于其他职业群体。</p>
 <p>表5 老年常见疾病的选中率</p>
-<pre><code>总样本   心理健康工作者   医疗卫生工作者   教育工作者   媒体工作者   其他职业
-</code></pre><hr>
-<p>  老年痴呆症   97.5     97.7             97.6             97.7         98.6         97.3<br>  焦虑症       55.4     57.3             60.0             55.5         57.8         54.2<br>  抑郁症       53.4     74.4             58.0             55.9         52.4         49.1<br>  强迫症       19.6     13.5             16.8             22.2         23.8         20.1<br>  精神分裂症   17.6     13.3             20.6             13.6         19.0         18.6<br>  自闭症       15.4     9.3              14.6             15.8         24.5         16.0</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>总样本</th>
+<th>心理健康工作者</th>
+<th>医疗卫生工作者</th>
+<th>教育工作者</th>
+<th>媒体工作者</th>
+<th>其他职业</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>老年痴呆症</td>
+<td>97.5</td>
+<td>97.7</td>
+<td>97.6</td>
+<td>97.7</td>
+<td>98.6</td>
+<td>97.3</td>
+</tr>
+<tr>
+<td>焦虑症</td>
+<td>55.4</td>
+<td>57.3</td>
+<td>60.0</td>
+<td>55.5</td>
+<td>57.8</td>
+<td>54.2</td>
+</tr>
+<tr>
+<td>抑郁症</td>
+<td>53.4</td>
+<td>74.4</td>
+<td>58.0</td>
+<td>55.9</td>
+<td>52.4</td>
+<td>49.1</td>
+</tr>
+<tr>
+<td>强迫症</td>
+<td>19.6</td>
+<td>13.5</td>
+<td>16.8</td>
+<td>22.2</td>
+<td>23.8</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>精神分裂症</td>
+<td>17.6</td>
+<td>13.3</td>
+<td>20.6</td>
+<td>13.6</td>
+<td>19.0</td>
+<td>18.6</td>
+</tr>
+<tr>
+<td>自闭症</td>
+<td>15.4</td>
+<td>9.3</td>
+<td>14.6</td>
+<td>15.8</td>
+<td>24.5</td>
+<td>16.0</td>
+</tr>
+</tbody>
+</table>
 <p>考虑到这一问题与中老年更加相关，我们进一步比较了不同年龄段对这一问题的回答。各年龄段对这6类疾病的选中率如图18所示。结果并未显示中老年对这一问题的回答更加准确。55-80岁群体对各类疾病的选中率略低于其他年龄段。</p>
-<p>[[CHART]]{.chart}</p>
+<div id="echarts6305" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6305'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    xAxis: {
+        type: 'category',
+        data: ['18-24', '25-34', '35-44', '45-54', '55-80']
+    },
+    yAxis: {
+        type: 'value',
+        name: '选中率（%）'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['老年痴呆症', '焦虑症', '抑郁症', '强迫症', '精神分裂症', '自闭症']
+    },
+    series: [{
+        name: '老年痴呆症',
+        data: [99.2, 97.8, 96.9, 95.8, 91.7],
+        type: 'line',
+        symbol: 'roundRect',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'blue',
+                width: 2,
+                type: 'dashed'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'blue'
+            }
+        }
+    },{
+        name: '焦虑症',
+        data: [54.0, 53.9, 57.5, 57.3, 54.8],
+        type: 'line',
+        symbol: 'pin',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'red',
+                width: 2,
+                type: 'dashed'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'red'
+            }
+        }
+    },{
+        name: '抑郁症',
+        data: [47.9, 52.0, 57.1, 60.2, 54.8],
+        type: 'line',
+        symbol: 'arrow',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'green',
+                width: 2,
+                type: 'solid'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'green'
+            }
+        }
+    },{
+        name: '强迫症',
+        data: [13.0, 18.1, 24.7, 26.1, 20.6],
+        type: 'line',
+        symbol: 'rect',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'purple',
+                width: 2,
+                type: 'dashed'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'purple'
+            }
+        }
+    },{
+        name: '精神分裂症',
+        data: [27.0, 16.1, 14.1, 10.5, 7.5],
+        type: 'line',
+        symbol: 'triangle',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'aqua',
+                width: 2,
+                type: 'dashed'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'aqua'
+            }
+        }
+    },{
+        name: '自闭症',
+        data: [18.4, 15.7, 14.7, 11.4, 8.8],
+        type: 'line',
+        symbol: 'diamond',
+        symbolSize: 8,
+        lineStyle: {
+            normal: {
+                color: 'orange',
+                width: 2,
+                type: 'dotted'
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: 'orange'
+            }
+        }
+    }]
+}
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 <p>图18 老年常见疾病选中率的年龄差异</p>
+<table>
+<thead>
+<tr>
+<th>分组</th>
+<th>18-24</th>
+<th>25-34</th>
+<th>35-44</th>
+<th>45-54</th>
+<th>55-80</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>老年痴呆症</td>
+<td>99.2</td>
+<td>97.8</td>
+<td>96.9</td>
+<td>95.8</td>
+<td>91.7</td>
+</tr>
+<tr>
+<td>焦虑症</td>
+<td>54.0</td>
+<td>53.9</td>
+<td>57.5</td>
+<td>57.3</td>
+<td>54.8</td>
+</tr>
+<tr>
+<td>抑郁症</td>
+<td>47.9</td>
+<td>52.0</td>
+<td>57.1</td>
+<td>60.2</td>
+<td>54.8</td>
+</tr>
+<tr>
+<td>强迫症</td>
+<td>13.0</td>
+<td>18.1</td>
+<td>24.7</td>
+<td>26.1</td>
+<td>20.6</td>
+</tr>
+<tr>
+<td>精神分裂症</td>
+<td>27.0</td>
+<td>16.1</td>
+<td>14.1</td>
+<td>10.5</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>自闭症</td>
+<td>18.4</td>
+<td>15.7</td>
+<td>14.7</td>
+<td>11.4</td>
+<td>8.8</td>
+</tr>
+</tbody>
+</table>
 <h2 id="五、讨论与建议"><a href="#五、讨论与建议" class="headerlink" title="五、讨论与建议"></a>五、讨论与建议</h2><h3 id="（一）本研究的意义"><a href="#（一）本研究的意义" class="headerlink" title="（一）本研究的意义"></a>（一）本研究的意义</h3><p>国民心理健康素养的研究，旨在促进国民心理健康水平，服务于”健康中国”、”平安中国”的建设目标。自2007年发布《中国心理健康量表》并完成首次国民心理健康状况调查以来，中国科学院心理研究所国民心理健康评估发展中心持续调查了多种人群的心理健康水平，并开展了大量的应用促进工作。群体层面的心理健康促进工作往往以科普宣讲、团体训练为主要形式，这时就不仅需要了解该群体的心理健康水平，还需要把握该群体在心理健康知识、行为、观念等方面的短板，才能有的放矢、对症下药。《心理健康素养问卷》正是满足这一测评需求的工具，它作为一把梯子，把群体心理健康状况测评与群体心理健康促进工作更好地衔接起来。如果说，《中国心理健康量表》有助于检测是否有问题存在，那么，《心理健康素养问卷》则为接下来的心理健康科普工作的落实指出了具体方向。</p>
 <p>作为对国民心理健康素养的首次全面调查，我们在调查内容上比前人的研究有所扩展。首先，我们对于心理健康素养的测查内容并不局限于知识层面，也兼顾了行为技能与态度意识层面的内容，能够更全面地反映出素养的各个维度。其次，在知识层面，我们不仅测查了成年人自身对心理疾病的预防、识别与治疗的相关知识，而且测查了成年人对影响下一代心理健康的儿童保护、儿童教育领域的知识。可以说，在测查内容的设计上，我们不仅关注当前国民心理健康的维护，而且关注未来一代的心理健康提升。再次，在调查心理健康素养的同时，我们加入了心理健康状况的测查指标，有助于探讨心理健康素养各维度与心理健康水平的关系，为未来的科普干预工作提供参考。</p>
 <p>在调查取样的设计上，我们重点关注了对国民心理健康影响较大的四类职业群体，分别是：心理健康工作者、医疗卫生工作者、教育工作者和媒体工作者。心理健康工作者作为直接对应于心理健康服务的职业群体，他们的心理健康素养直接影响着工作能力，更影响着所服务对象的心理健康。医疗卫生工作者之中，精神卫生工作者是直接服务于心理疾病患者的专业队伍，而其他科室的普通医护人员则经常面对一定比例的心身疾病患者乃至心理疾病患者。普通医护人员如果具有较高的心理健康素养，有助于表现为躯体化症状的心理疾病患者被及早识别和正确转诊，有助于心身疾病患者得到恰当的综合治疗，也有助于恰当引导一般躯体疾病患者及其家属以预防心理疾病。教育工作者面向广大的受教育人群特别是儿童青少年，影响面广泛，更影响着未来一代。儿童青少年处在心理发展的关键阶段，相比成年人，他们的心理健康更易受到影响，且影响往往持续长远。媒体工作者影响着更加广泛的人群，媒体信息对公众心理行为的影响不容忽视。媒体工作者选择、编译、转播信息的过程，无不受到其自身心理健康素养的影响，因而媒体工作者的心理健康素养往往在有意无意中传递给媒体受众，无论媒体工作者自身的工作内容是否涉及心理健康。这四类重点关注的职业群体，分别从较大的深度和广度上影响着国民的心理健康素养和心理健康状况。了解并提升他们的心理健康素养，是广泛促进国民心理健康的重要入手点。</p>
