@@ -1209,6 +1209,7 @@ CES-D）为美国国家心理健康中心的Radloff于1977年编制，在国际�
     xAxis: {
         type: 'value',
         name: '知晓率',
+        nameLocation: 'center',
         boundaryGap: [0, 0.01],
         min: 0.0,
         max: 100.0,
